@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-school</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <header>
+
+      <!-- ex-1 -->
+      <div class="container">
+        <h2 class="text-danger">Click the button to change the text</h2>
+        <button onclick="textChange()" type="button" class="btn btn-dark"> Text Change </button>
+        <h3 id="tc">lorenm fff</h3>
+
+        <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+      
+      <h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo1" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo1').style.display='block'">Click Me!</button>
+
+
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<p id="demo2"></p>
+<script>
+document.getElementById("demo2").innerHTML = 10.50;
+</script>
+
+<h1>JavaScript Operators</h1>
+
+<p>The + operator concatenates (adds) strings.</p>
+
+<p id="demo3"></p>
+
+<script>
+var txt1 = "What a very";
+var txt2 = "nice day";
+document.getElementById("demo3").innerHTML = txt1 + txt2;
+</script>
+
+<h2>JavaScript Global Functions</h2>
+<h2>parseInt()</h2>
+<p>The global JavaScript function parseInt() converts strings to numbers:</p>
+
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo4").innerHTML = 
+  parseInt("-10") + "<br>" +
+  parseInt("-10.33") + "<br>" +
+  parseInt("10") + "<br>" +
+  parseInt("10.33") + "<br>" +
+  parseInt("10 6") + "<br>" +  
+  parseInt("10 years") + "<br>" +  
+  parseInt("years 10");  
+</script>
+
+</div>
+
+    
+
+    <script src="jS/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
